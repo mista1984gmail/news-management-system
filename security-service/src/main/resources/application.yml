@@ -1,0 +1,36 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: security-service
+  datasource:
+    password: admin
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:15432}/news_database
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+  liquibase:
+    enabled: true
+    drop-first: false
+    change-log: classpath:db/changelog/db.changelog-master.xml
+    default-schema: public
+
+validate-token:
+  apihost: http://localhost:8081
+
+token:
+  signing:
+    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true

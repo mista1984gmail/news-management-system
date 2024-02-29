@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-21-4-insert-table-comment"
+               id="2024-02-21-4-insert-table-comment" author="s.mitskevich">
+
+        <insert tableName="comment">
+            <column  name="text"  value="Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet."/>
+            <column  name="news_id"  value="1"/>
+            <column  name="author_id"  value="1"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque sodales ut etiam sit amet."/>
+            <column  name="news_id"  value="1"/>
+            <column  name="author_id"  value="2"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus."/>
+            <column  name="news_id"  value="1"/>
+            <column  name="author_id"  value="4"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas."/>
+            <column  name="news_id"  value="3"/>
+            <column  name="author_id"  value="1"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Eu augue ut lectus arcu bibendum at varius vel."/>
+            <column  name="news_id"  value="3"/>
+            <column  name="author_id"  value="3"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed."/>
+            <column  name="news_id"  value="5"/>
+            <column  name="author_id"  value="7"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit amet dictum sit amet."/>
+            <column  name="news_id"  value="5"/>
+            <column  name="author_id"  value="8"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh."/>
+            <column  name="news_id"  value="5"/>
+            <column  name="author_id"  value="7"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit."/>
+            <column  name="news_id"  value="7"/>
+            <column  name="author_id"  value="7"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis."/>
+            <column  name="news_id"  value="8"/>
+            <column  name="author_id"  value="10"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel."/>
+            <column  name="news_id"  value="8"/>
+            <column  name="author_id"  value="1"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor at auctor urna."/>
+            <column  name="news_id"  value="9"/>
+            <column  name="author_id"  value="3"/>
+        </insert>
+
+
+        <insert tableName="comment">
+            <column  name="text"  value="Turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at."/>
+            <column  name="news_id"  value="11"/>
+            <column  name="author_id"  value="5"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis."/>
+            <column  name="news_id"  value="12"/>
+            <column  name="author_id"  value="8"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Quisque id diam vel quam elementum pulvinar etiam non."/>
+            <column  name="news_id"  value="15"/>
+            <column  name="author_id"  value="2"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Praesent elementum facilisis leo vel."/>
+            <column  name="news_id"  value="15"/>
+            <column  name="author_id"  value="5"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet."/>
+            <column  name="news_id"  value="18"/>
+            <column  name="author_id"  value="8"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed."/>
+            <column  name="news_id"  value="19"/>
+            <column  name="author_id"  value="6"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="Ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget."/>
+            <column  name="news_id"  value="19"/>
+            <column  name="author_id"  value="7"/>
+        </insert>
+
+        <insert tableName="comment">
+            <column  name="text"  value="A lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum non consectetur a erat nam at lectus urna duis."/>
+            <column  name="news_id"  value="20"/>
+            <column  name="author_id"  value="1"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

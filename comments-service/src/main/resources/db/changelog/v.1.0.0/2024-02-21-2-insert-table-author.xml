@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-21-2-insert-table-author"
+               id="2024-02-21-2-insert-table-author" author="s.mitskevich">
+
+        <insert tableName="author">
+            <column  name="username"  value="valda"/>
+            <column  name="address"  value="35033 Cronin Overpass, Shanitastad, AZ 24273-3513"/>
+            <column  name="email"  value="valda@gmail.com"/>
+            <column  name="telephone"  value="+375291234568"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2022-01-15"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="daina"/>
+            <column  name="address"  value="Apt. 187 79965 Mosciski Rapid, West Lemuel, NH 25422-4462"/>
+            <column  name="email"  value="daina@gmail.com"/>
+            <column  name="telephone"  value="+375291234569"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2023-08-17"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="nadene"/>
+            <column  name="address"  value="8117 Reinger Court, Lake Ramon, NC 06029"/>
+            <column  name="email"  value="nadene@gmail.com"/>
+            <column  name="telephone"  value="+375291234577"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2022-05-21"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="cecile"/>
+            <column  name="address"  value="Apt. 491 490 McClure Meadows, South Willetta, TX 20977-9821"/>
+            <column  name="email"  value="cecile@gmail.com"/>
+            <column  name="telephone"  value="+375291234571"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2022-10-05"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="cherri"/>
+            <column  name="address"  value="Suite 402 43139 Macejkovic Locks, South Reynaldaside, SC 52158-7583"/>
+            <column  name="email"  value="cherri@gmail.com"/>
+            <column  name="telephone"  value="+375291234572"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2020-06-24"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="gaston"/>
+            <column  name="address"  value="456 Hobert Lake, North Eldonport, VT 04186"/>
+            <column  name="email"  value="gaston@gmail.com"/>
+            <column  name="telephone"  value="+375291234573"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2020-07-28"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="santo"/>
+            <column  name="address"  value="8986 Verline Harbor, West Dane, OK 80567-7983"/>
+            <column  name="email"  value="santo@gmail.com"/>
+            <column  name="telephone"  value="+375291234574"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2020-03-03"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="fumiko"/>
+            <column  name="address"  value="Suite 462 96944 Marty Circles, Mullermouth, IN 25939-9885"/>
+            <column  name="email"  value="fumiko@gmail.com"/>
+            <column  name="telephone"  value="+375291234575"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2019-01-15"/>
+        </insert>
+
+        <insert tableName="author">
+            <column  name="username"  value="mauricio"/>
+            <column  name="address"  value="46344 Kuvalis River, West Jarod, ND 01077"/>
+            <column  name="email"  value="mauricio@gmail.com"/>
+            <column  name="telephone"  value="+375291234576"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2021-07-09"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

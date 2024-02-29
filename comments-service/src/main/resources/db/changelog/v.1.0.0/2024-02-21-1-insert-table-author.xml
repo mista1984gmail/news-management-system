@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-21-1-insert-table-author"
+               id="2024-02-21-1-insert-table-author" author="s.mitskevich">
+
+        <insert tableName="author">
+            <column  name="username"  value="hassan"/>
+            <column  name="address"  value="790 Sipes Fork, North Trangburgh, AR 09954-0481"/>
+            <column  name="email"  value="hassan@gmail.com"/>
+            <column  name="telephone"  value="+375291234567"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2021-01-01"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

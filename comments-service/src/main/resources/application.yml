@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: comments-service
+  config:
+    activate:
+      on-profile: default
+    import: optional:configserver:http://localhost:8888
+  cloud:
+    config:
+      fail-fast: true

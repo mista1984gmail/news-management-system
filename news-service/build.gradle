@@ -1,0 +1,87 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.2'
+    id 'io.spring.dependency-management' version '1.1.4'
+    id "io.freefair.lombok" version "6.5.1"
+    id 'org.liquibase.gradle' version '2.2.0'
+}
+
+group 'com.example'
+version '0.0.1-SNAPSHOT'
+
+ext {
+    mapstructVersion = "1.5.5.Final"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //Spring
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config:4.1.0'
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap:4.1.1'
+    implementation 'org.springframework.cloud:spring-cloud-config-client:4.1.0'
+
+    //Swagger
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.0.3'
+
+    //Eureka
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.1.0'
+    implementation 'org.springframework.cloud:spring-cloud-dependencies:2023.0.0'
+
+    //Redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    //Lombok
+    annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    //Mapping
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+
+    //DataBase
+    runtimeOnly 'org.postgresql:postgresql'
+
+    //Liquibase
+    implementation group: 'org.liquibase', name: 'liquibase-core', version: '4.25.0'
+
+    // Others
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.16.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.16.1'
+    implementation 'org.json:json:20231013'
+
+    //Exception handler
+    implementation project(':exception-handler-starter')
+
+    //Logging controller handler
+    implementation project(':logging-starter')
+
+    //JWT
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    //Testing
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.10.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.testcontainers:postgresql:1.19.3'
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.testcontainers:junit-jupiter:1.19.3'
+
+    //Wiremock
+    testImplementation 'org.wiremock:wiremock-standalone:3.4.2'
+
+}
+
+test {
+    useJUnitPlatform()
+}

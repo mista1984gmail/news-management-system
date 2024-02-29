@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-21-2-insert-table-news"
+               id="2024-02-21-2-insert-table-news" author="s.mitskevich">
+
+        <insert tableName="news">
+            <column  name="title"  value="Gravida rutrum quisque non tellus."/>
+            <column  name="text"  value="Ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate odio ut enim blandit volutpat maecenas volutpat."/>
+            <column  name="journalist_id"  value="1"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

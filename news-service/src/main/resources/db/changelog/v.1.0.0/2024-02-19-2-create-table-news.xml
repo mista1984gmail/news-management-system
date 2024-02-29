@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-19-2-create-table-news"
+               id="2024-02-19-2-create-table-news" author="s.mitskevich">
+        <createTable tableName="news">
+            <column name="id" type="serial">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+
+            <column name="create_date" type="timestamp" defaultValueDate="current_timestamp">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="update_date" type="timestamp" defaultValueDate="current_timestamp">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="title" type="varchar(99)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="text" type="varchar(1280)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="journalist_id" type="BIGINT">
+            <constraints nullable="false" />
+            </column>
+
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="journalist_id"
+                                 baseTableName="news"
+                                 constraintName="fkjuqwfph00x8hxnfo002xx0y25"
+                                 deferrable="false"
+                                 initiallyDeferred="false"
+                                 onDelete="NO ACTION"
+                                 onUpdate="NO ACTION"
+                                 referencedColumnNames="id"
+                                 referencedTableName="journalist"/>
+    </changeSet>
+
+</databaseChangeLog>

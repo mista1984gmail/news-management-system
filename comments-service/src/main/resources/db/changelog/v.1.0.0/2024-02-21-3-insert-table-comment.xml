@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-21-3-insert-table-comment"
+               id="2024-02-21-3-insert-table-comment" author="s.mitskevich">
+
+        <insert tableName="comment">
+            <column  name="text"  value="Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in."/>
+            <column  name="news_id"  value="1"/>
+            <column  name="author_id"  value="1"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

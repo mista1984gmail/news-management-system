@@ -1,0 +1,1 @@
+create database news_database;

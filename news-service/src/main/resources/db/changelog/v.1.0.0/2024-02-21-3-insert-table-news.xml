@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-21-3-insert-table-new"
+               id="2024-02-21-3-insert-table-new" author="s.mitskevich">
+
+        <insert tableName="news">
+            <column  name="title"  value="Eget velit aliquet sagittis id."/>
+            <column  name="text"  value="Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque."/>
+            <column  name="journalist_id"  value="2"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Mi quis hendrerit dolor magna."/>
+            <column  name="text"  value="Duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas."/>
+            <column  name="journalist_id"  value="3"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Habitasse platea dictumst vestibulum rhoncus."/>
+            <column  name="text"  value="Vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum."/>
+            <column  name="journalist_id"  value="4"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Sed nisi lacus sed viverra."/>
+            <column  name="text"  value="A diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus."/>
+            <column  name="journalist_id"  value="5"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Condimentum id venenatis a condimentum."/>
+            <column  name="text"  value="Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris."/>
+            <column  name="journalist_id"  value="6"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Convallis tellus id interdum velit."/>
+            <column  name="text"  value="Eget mauris pharetra et ultrices neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in."/>
+            <column  name="journalist_id"  value="7"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Nulla porttitor massa id neque."/>
+            <column  name="text"  value="Ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra."/>
+            <column  name="journalist_id"  value="8"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Dui id ornare arcu odio."/>
+            <column  name="text"  value="Auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed."/>
+            <column  name="journalist_id"  value="9"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Sapien faucibus et molestie ac."/>
+            <column  name="text"  value="Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo."/>
+            <column  name="journalist_id"  value="10"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="A erat nam at lectus."/>
+            <column  name="text"  value="A diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus."/>
+            <column  name="journalist_id"  value="1"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Id aliquet risus feugiat in."/>
+            <column  name="text"  value="A erat nam at lectus urna duis convallis convallis tellus id interdum velit laoreet id donec ultrices tincidunt arcu non sodales neque sodales ut etiam sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque."/>
+            <column  name="journalist_id"  value="2"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Accumsan lacus vel facilisis volutpat."/>
+            <column  name="text"  value="Nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed."/>
+            <column  name="journalist_id"  value="3"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Et malesuada fames ac turpis."/>
+            <column  name="text"  value="Consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla facilisi morbi."/>
+            <column  name="journalist_id"  value="4"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Quam id leo in vitae."/>
+            <column  name="text"  value="Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor."/>
+            <column  name="journalist_id"  value="5"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Orci a scelerisque purus semper."/>
+            <column  name="text"  value="Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit amet dictum sit amet justo donec enim diam vulputate ut pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra."/>
+            <column  name="journalist_id"  value="6"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Nulla facilisi cras fermentum odio."/>
+            <column  name="text"  value="Turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis."/>
+            <column  name="journalist_id"  value="7"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Habitant morbi tristique senectus et."/>
+            <column  name="text"  value="Neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam."/>
+            <column  name="journalist_id"  value="8"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Nulla pellentesque dignissim enim sit."/>
+            <column  name="text"  value="Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean."/>
+            <column  name="journalist_id"  value="9"/>
+        </insert>
+
+        <insert tableName="news">
+            <column  name="title"  value="Arcu bibendum at varius vel."/>
+            <column  name="text"  value="Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a."/>
+            <column  name="journalist_id"  value="10"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

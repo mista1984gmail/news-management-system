@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-26-1-insert-table-user"
+               id="2024-02-26-1-insert-table-user" author="s.mitskevich">
+
+        <insert tableName="_user">
+            <column  name="first_name"  value="Savanna"/>
+            <column  name="last_name"  value="Erickson"/>
+            <column  name="email"  value="savanna@gmail.com"/>
+            <column  name="password"  value="$2a$10$PZRB/9ut2gra7OK9A8vHSOnEUios4bY/nls6hq9LoW1ziGV5rX.7W"/>
+            <column  name="user_role"  value="JOURNALIST"/>
+        </insert>
+
+        <insert tableName="_user">
+            <column  name="first_name"  value="Fumiko"/>
+            <column  name="last_name"  value="Chan"/>
+            <column  name="email"  value="fumiko@gmail.com"/>
+            <column  name="password"  value="$2a$10$PZRB/9ut2gra7OK9A8vHSOnEUios4bY/nls6hq9LoW1ziGV5rX.7W"/>
+            <column  name="user_role"  value="SUBSCRIBER"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-19-2-create-table-comment"
+               id="2024-02-19-2-create-table-comment" author="s.mitskevich">
+
+        <createTable tableName="comment">
+
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="bank_account_pkey"/>
+            </column>
+
+            <column name="create_date" type="timestamp" defaultValueDate="current_timestamp">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="update_date" type="timestamp" defaultValueDate="current_timestamp">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="text" type="varchar(1280)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="news_id" type="BIGINT">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="author_id" type="BIGINT">
+            <constraints nullable="false" />
+            </column>
+
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="author_id"
+                                 baseTableName="comment"
+                                 constraintName="fkjuqwfph00x8hxnfo002xx0y25"
+                                 deferrable="false"
+                                 initiallyDeferred="false"
+                                 onDelete="NO ACTION"
+                                 onUpdate="NO ACTION"
+                                 referencedColumnNames="id"
+                                 referencedTableName="author"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="2024-02-19-1-create-table-author.xml" relativeToChangelogFile="true" />
+    <include file="2024-02-19-2-create-table-comment.xml" relativeToChangelogFile="true" />
+    <include file="2024-02-20-1-add-column-deleted-table-comment.xml" relativeToChangelogFile="true" />
+    <include file="2024-02-21-1-insert-table-author.xml" relativeToChangelogFile="true" />
+    <include file="2024-02-21-2-insert-table-author.xml" relativeToChangelogFile="true" />
+    <include file="2024-02-21-3-insert-table-comment.xml" relativeToChangelogFile="true" />
+    <include file="2024-02-21-4-insert-table-comment.xml" relativeToChangelogFile="true" />
+    <include file="2024-02-21-5-add-column-deleted-table-author.xml" relativeToChangelogFile="true" />
+
+</databaseChangeLog>

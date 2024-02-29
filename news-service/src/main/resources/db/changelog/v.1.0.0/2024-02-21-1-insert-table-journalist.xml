@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2024-02-21-1-insert-table-journalist"
+               id="2024-02-21-1-insert-table-journalist" author="s.mitskevich">
+
+        <insert tableName="journalist">
+            <column  name="username"  value="savanna"/>
+            <column  name="address"  value="54946 O'Conner Centers, East Thurman, NC 46501-1384"/>
+            <column  name="email"  value="savanna@gmail.com"/>
+            <column  name="telephone"  value="+375291234511"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2023-05-25"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="anisa"/>
+            <column  name="address"  value="25933 Stamm Fort, East Dwightshire, MO 84762"/>
+            <column  name="email"  value="anisa@gmail.com"/>
+            <column  name="telephone"  value="+375291234512"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2023-09-17"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="timothy"/>
+            <column  name="address"  value="Suite 129 11459 Buckridge Hollow, South Beverly, CO 62069-6849"/>
+            <column  name="email"  value="timothy@gmail.com"/>
+            <column  name="telephone"  value="+375291234513"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2020-07-17"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="olly"/>
+            <column  name="address"  value="Apt. 628 34938 Hoa Hills, Lake Robbieburgh, NE 41401"/>
+            <column  name="email"  value="olly@gmail.com"/>
+            <column  name="telephone"  value="+375291234514"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2018-04-26"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="lennon"/>
+            <column  name="address"  value="87404 Gleason Alley, Oberbrunnerland, VA 82515"/>
+            <column  name="email"  value="lennon@gmail.com"/>
+            <column  name="telephone"  value="+375291234515"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2019-12-15"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="noel"/>
+            <column  name="address"  value="Apt. 612 992 McLaughlin Glen, West Emerson, ND 08945-3868"/>
+            <column  name="email"  value="noel@gmail.com"/>
+            <column  name="telephone"  value="+375291234516"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2020-11-29"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="harley"/>
+            <column  name="address"  value="Suite 638 9655 Kuvalis Manors, Borisside, NV 29905"/>
+            <column  name="email"  value="harley@gmail.com"/>
+            <column  name="telephone"  value="+375291234517"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2020-10-23"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="paula"/>
+            <column  name="address"  value="856 Wallace Passage, Boganmouth, WI 28693-6363"/>
+            <column  name="email"  value="paula@gmail.com"/>
+            <column  name="telephone"  value="+375291234518"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2021-06-18"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="davina"/>
+            <column  name="address"  value="94265 Dominick Flats, Port Zachary, MA 81521-2636"/>
+            <column  name="email"  value="davina@gmail.com"/>
+            <column  name="telephone"  value="+375291234519"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2021-08-01"/>
+        </insert>
+
+        <insert tableName="journalist">
+            <column  name="username"  value="francesca"/>
+            <column  name="address"  value="7683 Brain Crest, South Jerry, MO 34768-5058"/>
+            <column  name="email"  value="francesca@gmail.com"/>
+            <column  name="telephone"  value="+375291234521"/>
+            <column  name="is_blocked"  valueBoolean="false"/>
+            <column  name="registration_date"  valueDate="2022-05-03"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

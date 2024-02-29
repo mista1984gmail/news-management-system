@@ -1,0 +1,72 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.2'
+    id 'io.spring.dependency-management' version '1.1.4'
+    id "io.freefair.lombok" version "6.5.1"
+    id 'org.liquibase.gradle' version '2.2.0'
+}
+springBoot {
+    mainClass = 'com.example.SecurityApplication'
+}
+group 'com.example'
+version '0.0.1-SNAPSHOT'
+
+ext {
+    mapstructVersion = "1.5.5.Final"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //Spring
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    //Eureka
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.1.0'
+    implementation 'org.springframework.cloud:spring-cloud-dependencies:2023.0.0'
+
+    //DataBase
+    runtimeOnly 'org.postgresql:postgresql'
+
+    //Mapping
+    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    testAnnotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+
+    //Lombok
+    annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    //Logging
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.20.0'
+
+    //Liquibase
+    implementation group: 'org.liquibase', name: 'liquibase-core', version: '4.25.0'
+
+    //JWT
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    // Others
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.16.1'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    enabled = true
+}

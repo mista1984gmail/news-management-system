@@ -1,0 +1,12 @@
+rootProject.name = 'news-management-system'
+include 'news-service'
+include 'comments-service'
+include 'feign-client-service'
+include 'exception-handler-starter'
+include 'logging-starter'
+include 'eureka-server'
+include 'security-service'
+include 'gateway-service'
+include 'cache-spring-boot-starter'
+include 'spring-cloud-config-api'
+
